@@ -1,11 +1,13 @@
 footer main {
     height: 80vh;
+  
   }
   
   footer {
     width: 100%;
     color: #fff;
     z-index: 200%;
+    font-size: 14px;
   }
   
   
