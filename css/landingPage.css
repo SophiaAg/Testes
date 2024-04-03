@@ -57,7 +57,11 @@ html {
 }
 
 
-.header &:active {
+/*.header &::active {
+    transform: translateY(0rem);
+  } Estudar*/
+
+  .header:active {
     transform: translateY(0rem);
   }
 
@@ -78,25 +82,26 @@ html {
     margin: 0.1rem;
     font-size: 1.7rem;
     color: var(--CinzaEscuro);
-    padding: 0.8rem;
+    padding: 0.8rem;}
     
 
-    &:hover {
+    .navbar a:hover {
       color: var(--Amarelo);
     }
-  }
+  
 
   .icons a,
   .icons div {
     font-size: 2.5rem;
     margin-left: 1.5rem;
     color: var(--Preto);
-    cursor: pointer;
+    cursor: pointer; }
 
-    &:hover {
+    .icons a,
+    .icons div :hover {
       color: var(--Amarelo);
     }
-  }
+  
 
 
 #menu-btn {
@@ -298,6 +303,31 @@ h2 {
     }
 
 
+    
+/* planos*/
+.planos {
+  width: 900px;
+  margin: 5% auto;
+}
+
+.planos-base{
+  width: 33%;
+  background: #262626;
+  margin-top: 2%;
+  box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  transition: 0.9s;
+}
+
+.preco{
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 2px solid #da4357;
+  margin: 5% auto 0 auto;
+  text-align: center;
+
+}
 
 
 
@@ -324,45 +354,42 @@ h2 {
     background-position: right;
   }
 
-  .content {
+  .about.content {
     text-align: center;
     padding-bottom: 5rem;
+  }
 
-    h3 {
+    .about .content h3 {
       font-size: 4.5rem;
     }
   }
-}
 
 @media (max-width: 768px) {
 
-  #menu-btn {
+  .header .icons #menu-btn {
     display: inline-block;
   }
 
-  .header {
-
-    .navbar {
+  .header .navbar {
       position: absolute;
       top: 99%;
       left: 0;
       right: 0;
       background: var(--Branco);
       clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
 
-      &.active {
+  .header .navbar:hover  {
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
       }
 
-      a {
+      .header .navbar a {
         display: block;
         margin: 2rem;
         font-size: 2rem;
       }
     }
-  }
 
-}
 
 @media (max-width: 450px) {
 
