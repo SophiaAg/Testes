@@ -128,7 +128,7 @@ header{
   transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 .dropdown_menu.open{
-  height: 250px;
+  height: 300px;
 }
  
 .dropdown_menu a {
@@ -216,7 +216,7 @@ header{
  
 .carousel .list .item .content .title{
   font-weight: bold;
-  font-size: 5em;
+  font-size: 10em;
   list-style: 1.3em;
 }
  
