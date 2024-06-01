@@ -1092,7 +1092,7 @@ margin-left: -100%;
 .container-equipe .main-card .cards{
  width: calc(100% / 2 - 10px);
  display: flex;
- flex-wrap: wrap;
+ gap: 10%;
  margin: 0 20px;
  justify-content: space-between;
 }
@@ -1111,8 +1111,8 @@ margin-left: -100%;
 }
 
 .cards .card-e .content-e .img img{
-  height: 100%;
-  width: 100%;
+  height: 80%;
+  width: 80%;
   border: 3px solid var(--branco);
   border-radius: 50%;
   object-fit: cover;
