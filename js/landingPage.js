@@ -77,3 +77,4 @@ darkmode.onclick = () => {
         document.body.classList.remove('color')
     }
 }
+

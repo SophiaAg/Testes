@@ -1067,12 +1067,12 @@ header {
 }
 
 /*Equipe*/
-
 .equipe{
-  margin: 5%;
+  width: 100%;
 }
+
 .wrapper{
-  
+  height: 500px;
   width: 100%;
  position: relative;
 }
@@ -1115,6 +1115,11 @@ header {
  justify-content: center;
 
 } 
+
+.carousel.dragging .card{
+  cursor: grab;
+  user-select: none;
+}
 .carousel .card {
   height: 342px;
   list-style: none;
