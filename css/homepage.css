@@ -39,6 +39,7 @@ header .header-top{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-left: 3%;
 }
 
 header .header-top .logo{
