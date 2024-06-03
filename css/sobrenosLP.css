@@ -264,7 +264,7 @@ header{
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--cor-primaria);
+  /*background-color: var(--cor-primaria);*/
   margin: 5%;
    }
 
