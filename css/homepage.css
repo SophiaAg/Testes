@@ -15,7 +15,7 @@
 /*cores*/
 :root {
     --cor-primaria: #000080;
-    --cor-segundaria: #E2BC26;
+    --cor-segundaria: #FF8100;
     --qs-branco: #eeeeeeda;
     --branco: #fff;
     --preto: #000;
@@ -222,6 +222,7 @@ header .header-main .search-form label:hover {
 }
 
 .servicos .box-container .box-ser .content {
+    font-size: 2rem;
     text-align: center;
     padding: 2rem;
     position: relative;
@@ -369,6 +370,7 @@ header .header-main .search-form label:hover {
     overflow-x: auto;
     overscroll-behavior-inline: contain;
     scroll-snap-type: inline mandatory;
+    margin: 4%;
 }
 
 .sugestao-card{
@@ -433,6 +435,56 @@ header .header-main .search-form label:hover {
     }
 
 }
+
+
+/*about*/
+.about-section {
+    padding-block: 4rem;
+    margin: 5%;
+    text-align: center;
+    background: var(--cor-primaria);
+    border-radius: 1.5rem;
+    border: 2px solid var(--branco);
+    color: var(--branco);
+  }
+  
+  .about-section .header-section {
+    font-weight: 700;
+    font-size: 40px;
+    color: var(--branco);
+  }
+  
+  .about-section .header-section span {
+    color: var(--cor-segundaria);
+  }
+  
+  .description-section {
+    max-width: 900px;
+    margin-inline: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    color: var(--branco);
+  }
+
+  .description-section span {
+    font-weight: 700;
+    font-size: 1.4rem;
+    color: var(--cor-segundaria);
+  }
+  
+  .btn-about {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: .8rem 3rem;
+    border-radius: 5rem;
+    background: var(--cor-segundaria);
+    font-size: 1.3rem;
+    color: var(--branco);
+    cursor: pointer;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    transition: all .3s linear;
+  }
 
 /*footer*/
 
