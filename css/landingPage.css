@@ -15,8 +15,8 @@
 
 /*cores*/
 :root {
-  --cor-primaria: #000080;
-  --cor-segundaria: #E2BC26;
+  --cor-primaria: #3C5F51;
+  --cor-segundaria: #AC86DD;
   --qs-branco: #eeeeeeda;
   --branco: #fff;
   --preto: #000;
@@ -24,8 +24,8 @@
 }
 
 body.color {
-  --cor-primaria: #5BB9F0;
-  --cor-segundaria: #FFE027;
+  --cor-primaria: #B6BF89;
+  --cor-segundaria: #A88EFF;
   --qs-branco: #2b2b2bda;
   --branco: #252525;
   --preto: #fff;
