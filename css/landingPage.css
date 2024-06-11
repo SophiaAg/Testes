@@ -924,8 +924,7 @@ header {
 }
 
 
-/*Planos*/
-
+/*Planos
 .heading-planos {
   align-items: center;
   justify-content: center;
@@ -1016,6 +1015,8 @@ header {
 .planos .planos_container .box-planos .list-plan p .fa-times {
   color: red;
 }
+  */
+
 
 #darkmode {
   font-size: 30px;
@@ -1171,4 +1172,109 @@ header {
     grid-auto-columns: 100%;
   }
 
+}
+
+/*equipe*/
+
+.container-equipe{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--branco);
+  max-width: 600px;
+  margin: auto;
+  position: relative;
+}
+
+.testimonial {
+  position: relative;
+  max-width: 900px;
+  width: 100%;
+ padding: 50px 0;
+ background-color: var(--branco);
+ overflow: hidden;
+ position: relative;
+
+}
+
+.testimonial .image{
+  height: 250px;
+  width: 250px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 2%;
+}
+
+.testimonial .slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  
+}
+.testi-content{
+  display: flex;
+
+}
+
+.slide p{
+  text-align: center;
+  font-size: 14px;
+color: var(--preto);
+  font-weight:400  ;
+  padding: 0 160px;
+}
+
+.slide i {
+  font-size: 30px;
+  color: var(--cor-segundaria)
+}
+
+.slide .details{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.details .name{
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--textos);
+}
+
+.details .job{
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--textos);
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.slide.active {
+  display: block;
 }
