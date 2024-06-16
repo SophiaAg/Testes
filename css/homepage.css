@@ -492,7 +492,7 @@ footer {
     width: 100%;
     position: relative;
     bottom: 0;
-    background: linear-gradient(to right, var(--cor-segundaria), var(--cor-primaria));
+    background: #585858;
     color: var(--branco);
     padding: 100px 0 30px;
     border-top-left-radius: 125px;
