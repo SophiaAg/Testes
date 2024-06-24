@@ -448,19 +448,21 @@ header .header-main .search-form label:hover {
     justify-content: center;
     align-items: center;
     position: relative;
-}
-
-.container-empresaPremium .slides-row{
-    display: flex;
-    height: 90%;
-    margin: 10%;
-    gap: 10%;
-}
-
-.container-empresaPremium .slides-row .slide-empresaP{
-    min-width: 90%;
-    display: flex;
     width: 75%;
+}
+
+.container-empresaPremium .slidesrow{
+    display: flex;
+    height: 100%;
+   margin: 5%;
+    
+}
+
+.container-empresaPremium .slidesrow .slide-empresaP{
+    min-width: 100%;
+
+    display: flex;
+    width: 100%;
     height: 350px;
     border-radius: 30px;
     background-color: #000080;
@@ -469,39 +471,39 @@ header .header-main .search-form label:hover {
    
 }
 
-.container-empresaPremium .slides-row .slide-empresaP img{
+.container-empresaPremium .slidesrow .slide-empresaP img{
    width: 50%;
    height: 100%;
    object-fit: cover;
    border-radius: 15px;
 }
-.container-empresaPremium .slides-row .slide-empresaP .conteudo{
+.container-empresaPremium .slidesrow .slide-empresaP .conteudo{
     margin: 4%;
 }
-.container-empresaPremium .slides-row .slide-empresaP .conteudo h1{
+.container-empresaPremium .slidesrow .slide-empresaP .conteudo h1{
    align-items: center;
    justify-content: center;
    display: flex;
    color: var(--preto);
  } 
 
- .container-empresaPremium .slides-row .slide-empresaP .conteudo p{
+ .container-empresaPremium .slidesrow .slide-empresaP .conteudo p{
   color: var(--preto);
     margin-top: 2%;
   } 
 
-  .container-empresaPremium .slides-row .slide-empresaP .conteudo .end{
+  .container-empresaPremium .slidesrow .slide-empresaP .conteudo .end{
     color: var(--cor-segundaria);
       margin-top: 5%;
     } 
 
-    .container-empresaPremium .slides-row .slide-empresaP .conteudo .contato{
+    .container-empresaPremium .slidesrow .slide-empresaP .conteudo .contato{
         margin-left: 60%;
     margin-top: 10%;
     color: green;
         } 
 
-.container-empresaPremium span.next, span.prev {
+.container-empresaPremium span#next-btn, span#prev-btn {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -518,15 +520,15 @@ header .header-main .search-form label:hover {
     margin-right: 5%;
 }
 
-.container-empresaPremium span.next{
+.container-empresaPremium span#next-btn{
     right: 10px;
 }
 
-.container-empresaPremium span.prev{
+.container-empresaPremium span#prev-btn{
     left: 10px;
 }
 
-.container-empresaPremium span.next:hover,  span.prev:hover {
+.container-empresaPremium span#next-btn:hover,  span#prev-btn:hover {
     background-color: var(--cor-segundaria);
     opacity: 0.8;
     color: var(--branco);
