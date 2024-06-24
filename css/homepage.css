@@ -370,7 +370,7 @@ header .header-main .search-form label:hover {
     overflow-x: auto;
     overscroll-behavior-inline: contain;
     scroll-snap-type: inline mandatory;
-    margin: 4%;
+    margin: 5%;
 }
 
 .sugestao-card{
@@ -436,7 +436,122 @@ header .header-main .search-form label:hover {
 
 }
 
+/*carrosel de empresas*/
 
+.carroselEmpresaPremium{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-empresaPremium{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 75%;
+    height: 350px;
+    border-radius: 30px;
+    background-color: #000080;
+    border: 3px solid white;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+
+}
+
+.container-empresaPremium .slides-row{
+    display: flex;
+    height: 90%;
+    
+
+}
+
+.container-empresaPremium .slides-row .slide-empresaP{
+    min-width: 100%;
+    display: flex;
+}
+
+.container-empresaPremium .slides-row .slide-empresaP img{
+   width: 50%;
+   height: 100%;
+   object-fit: cover;
+   border-radius: 15px;
+}
+.container-empresaPremium .slides-row .slide-empresaP .conteudo{
+    margin: 4%;
+}
+.container-empresaPremium .slides-row .slide-empresaP .conteudo h1{
+   align-items: center;
+   justify-content: center;
+   display: flex;
+   color: var(--preto);
+ } 
+
+ .container-empresaPremium .slides-row .slide-empresaP .conteudo p{
+  color: var(--preto);
+    margin-top: 2%;
+  } 
+
+  .container-empresaPremium .slides-row .slide-empresaP .conteudo .end{
+    color: var(--cor-segundaria);
+      margin-top: 5%;
+    } 
+
+    .container-empresaPremium .slides-row .slide-empresaP .conteudo .contato{
+        margin-left: 60%;
+    margin-top: 10%;
+    color: green;
+        } 
+
+.container-empresaPremium span.next, span.prev {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 12px 16px;
+    color: var(--textos);
+    font-weight: bold;
+    font-size: 22px;
+    transition: 0.5s;
+    border-radius: 30px;
+    user-select: none;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.container-empresaPremium span.next{
+    right: 10px;
+}
+
+.container-empresaPremium span.prev{
+    left: 10px;
+}
+
+.container-empresaPremium span.next:hover,  span.prev:hover {
+    background-color: var(--cor-segundaria);
+    opacity: 0.8;
+    color: var(--branco);
+}
+
+.container-empresaPremium .dots{
+    position: absolute;
+    bottom: 5px;
+    z-index: 3;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.container-empresaPremium .dots .dot{
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    border: 3px solid #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.container-empresaPremium .dots .active{
+    background-color: var(--preto);
+}
 /*about*/
 .about-section {
     padding-block: 4rem;
