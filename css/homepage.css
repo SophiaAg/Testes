@@ -448,26 +448,25 @@ header .header-main .search-form label:hover {
     justify-content: center;
     align-items: center;
     position: relative;
+}
+
+.container-empresaPremium .slides-row{
+    display: flex;
+    height: 90%;
+    margin: 10%;
+    gap: 10%;
+}
+
+.container-empresaPremium .slides-row .slide-empresaP{
+    min-width: 90%;
+    display: flex;
     width: 75%;
     height: 350px;
     border-radius: 30px;
     background-color: #000080;
     border: 3px solid white;
     box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2);
-    overflow: hidden;
-
-}
-
-.container-empresaPremium .slides-row{
-    display: flex;
-    height: 90%;
-    
-
-}
-
-.container-empresaPremium .slides-row .slide-empresaP{
-    min-width: 100%;
-    display: flex;
+   
 }
 
 .container-empresaPremium .slides-row .slide-empresaP img{
@@ -515,6 +514,8 @@ header .header-main .search-form label:hover {
     user-select: none;
     cursor: pointer;
     z-index: 1;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 .container-empresaPremium span.next{
@@ -552,6 +553,8 @@ header .header-main .search-form label:hover {
 .container-empresaPremium .dots .active{
     background-color: var(--preto);
 }
+
+
 /*about*/
 .about-section {
     padding-block: 4rem;
