@@ -36,7 +36,7 @@ slide.addEventListener('transitionend', () => {
   if (slides[index].id === firstClone.id) {
     slide.style.transition = 'none';
     index = 1;
-    slide.style.transform = `translateX(${-slideWidth * index}px)`;
+    slide.style.transform = `translateX(${-slideWidth + index}px)`;
   }
 
   if (slides[index].id === lastClone.id) {
