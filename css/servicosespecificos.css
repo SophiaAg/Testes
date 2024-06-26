@@ -181,10 +181,10 @@ header .header-main .search-form label:hover {
     }
 }
 
-.category-img-box {
+.category-img-box img {
     background: var(--qs-branco);
-    border: 1px solid hsl(0, 0%, 80%);
-    padding: 10px;
+    border: 1px solid hsla(0, 0%, 98%, 0.219);
+    padding: 5px;
     border-radius: 20px;
     width: 100px;
     height: 100px;
