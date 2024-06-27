@@ -164,7 +164,7 @@ header .header-main .search-form label:hover {
     }
 
     .servicos .box-container .box-ser {
-        flex: 1 0 20rem;
+        flex: 1 0 10rem;
         width: 50%;
     }
 }
@@ -201,7 +201,7 @@ header .header-main .search-form label:hover {
 
 @media screen and (max-width:1200px) {
     .servicos .box-container .box-ser {
-        flex: 1 0 20rem;
+        flex: 1 0 10rem;
     }
 }
 
