@@ -7,35 +7,63 @@
     <link rel="stylesheet" href="infopessoal.css">
 </head>
 <body>
+    <header>
+        <section class="header-top">
+          
+
+            
+            <a href="/" class="logo"><img src="/src/img-homepage/logo.png" alt="logo">BOX <span>PETS</span></a>
+
+            <section class="icons">
+                <section id="search-btn" class="fas fa-search"></section>
+                <a href="#" class="fa-regular fa-moon" id="darkmode"></a>
+                <a href="#" class="fa-regular fa-calendar"></a>
+                <a href="#" class="fas fa-user"></a>
+            </section>
+
+        </section>
+
+        <section class="header-main">
+            <section class="container">
+
+                <form action="" class="search-form">
+                    <input type="search" name="" placeholder="O que você procura?" id="search-box">
+                    <label for="search-box" class="fas fa-search"></label>
+                </form>
+
+            </section>
+        </section>
+    </header>
     <div class="container">
-        <div class="image-container">
-            <img src="Imglogin.png" alt="Illustration">
-        </div>
+      
+
+
         <div class="form-container">
-            <h1>Bem vindo devolta!</h1>
-            <p>Registre sua conra comercial</p>
+            <h1>Coloque seus dados</h1>
+            <p>Antes de cadastrar sua empresa, coloque suas informações para um processo mais facil</p>
             <form action="#" method="post">
                 
                 <div class="inputline "> 
-                <label for="name">Nome</label>
-                <input type="text" id="name" name="name" required>
+                <label >Nome Completo</label>
+                <input type="text" id="name" name="name" placeholder="Nome">
             </div>
                 
             <div class="inputline "> 
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
+                <label>Email</label>
+                <input type="email" id="email" name="email" placeholder="Email">
             </div>
 
-                <div class="inputline "> 
-                <label for="password">Senha</label>
-                <input type="password" id="password" name="password" required>
+            <div class="inputline "> 
+                <label>Celular </label>
+                <input type="text" id="name" name="name" placeholder="Contato">
             </div>
             
-                <button type="submit">Entrar</button>
+                <button class="button-CADASTRAR" type="submit">Cadastrar Agora</button>
+            
             </form>
-            <div class="social-login">
+         
             </div>
-            <p class="signin">Não tem conta ainda?? <a href="#">Cadastrar</a></p>
+        
         </div>
     </div>
 </body>
