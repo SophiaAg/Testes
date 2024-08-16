@@ -32,139 +32,16 @@ body.color {
 
 }
 
-header .header-top{
-    background: var(--branco);
-    padding: 1%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-right: 3%;
-    width: 100%;
-    
-}
-
-header .header-top .logo{
-    font-size: 26px;
-    font-weight: bolder;
-    color: var(--cor-primaria);
-    align-items: center;
-    display: flex;
-    margin-left: 3%;
-}
 
 
-@media (max-width:400px){
-    header .header-top .logo{
-        font-size: 20px;
-    }
-}
-
-@media (max-width:300px){
-    header .header-top .logo{
-      display: none;
-    }
-}
-
-header .header-top .logo span{
-    color: var(--cor-segundaria);
-}
-
-header .header-top .logo img {
-    width: 60px;
-    height: 60px;
-}
-
-
-@media (max-width:400px){
-    header .header-top .logo img {
-        width: 40px;
-        height: 40px;
-    }
-    
-}
-
-
-header .header-top .icons{
-    display: flex;
-    margin-right: 10%;
-    gap: 10%;
-}
-
-header .header-top .icons div,
-header .header-top .icons a{
-    font-size: 30px;
-    margin-left: .5rem;
-    color: var(--preto);
-    cursor: pointer;
-    padding: 2%;
-}
-
-
-@media (max-width:400px){
-    header .header-top .icons div,
-    header .header-top .icons a{
-        font-size: 20px;
-    }
-    
-}
-
-header .header-top .icons div:hover,
-header .header-top .icons a:hover{
-    color: var(--cor-segundaria);
-}
-
-#search-btn {
-    display: none;
-}
-
-header .header-main .container{
-width: 100%;
-height: 80px;
-background: var(--cor-primaria);
-display: flex;
-justify-content: center;
-align-items: center;
-
-}
-
-header .header-main .search-form{
-    width: 70%;
-    height: 40px;
-    overflow: hidden;
-    background: var(--branco);
-    display: flex;
-    align-items: center;
-    border-radius: 20px;
-    margin: 2%
-}
-
-header .header-main .search-form input {
-    font-size: 16px;
-    padding: 0 12px;
-    height: 100%;
-    width: 100%;
-    text-transform: none;
-    color: var(--preto);
-}
-
-header .header-main .search-form label{
-   
-    font-size: 20px;
-    padding: 10%;
-    color: var(--preto);
-    cursor: pointer;
-}
-
-header .header-main .search-form label:hover{
-    color: var(--cor-segundaria);
-}
-
-.container {
+/*.container {
     background-image: url('Pet-Friendly-Topo.png');
-    background-size: cover; /* A imagem cobre todo o fundo */
+    background-size: cover; /* A imagem cobre todo o fundo 
+    display: flex;
+}*/
+.container{
     display: flex;
 }
-
 .container .form-container{
     background-color: var(--qs-branco);
     padding: 20px;
@@ -182,33 +59,33 @@ header .header-main .search-form label:hover{
     padding: 10px;
 }
 
-.container .form-container .inputline {
-    position: relative;
-    margin: 20px 0 0 20px;
-    width: 310px;
-}
-
-
-.container .form-container .inputline label{
-    position: absolute;
-    display: contents;
-    transform: translateY(-50%);
-    color: #000;
-    font-size: 1em;
-    pointer-events: none;
-    transition: 0.5s;
-    
-}
-
-
-.container .form-container .inputline input {
+.input-field {
+    max-width: 380px;
     width: 100%;
-    height: 50px;
-    background: var(--qs-branco);;
-    border:#5e5e5e;
-    border-radius: 10px;
-    padding: 0 35px 0 5px;
-}
+    background-color: #f0f0f0;
+    margin: 10px 0;
+    height: 55px;
+    border-radius: 55px;
+    display: grid;
+    grid-template-columns: 15% 85%;
+    padding: 0 0.4rem;
+    position: relative;
+  }
+
+  .input-field input {
+    background: none;
+    outline: none;
+    border: none;
+    line-height: 1;
+    font-weight: 500;
+    font-size: 1rem;
+    color: #adadad;
+  }
+
+  .input-field input::placeholder {
+    color: #aaa;
+    font-weight: 500;
+  }
 
 .container .form-container .button-CADASTRAR{
     display: inline-block;
