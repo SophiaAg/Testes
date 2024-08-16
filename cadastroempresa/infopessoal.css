@@ -47,17 +47,42 @@ body{
   justify-content: center;
   min-height: 100vh;
   overflow: hidden;
+  background-color: #000080;
  
 }
+header{
+  background: var(--qs-branco);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.8rem 9%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  transform: translateY(-10rem, );
+  box-shadow: 0 .3rem 1.5rem rgb(82, 82, 82);
+}
+
+header .header-simples {
+  font-size: 12px;
+  color: var(--preto);
+}
+
+header .header-simples span{
+  color: var(--cor-segundaria);
+}
+
+
 ::selection{
   color: #fff;
   background: var(--cor-segundaria);
 }
 .container{
   width: 80%;
-  background: #fff;
- 
-  border-radius: 5px;
+  background: var(--branco);
+  border-radius: 20px;
   padding: 50px 35px 10px 35px;
 }
 .container header{
@@ -82,10 +107,11 @@ body{
   width: 25%;
   transition: margin-left 0.3s ease-in-out;
 }
-.form-outer form .page .title{
+.form-outer form .page .title-info{
   text-align: left;
-  font-size: 25px;
+  font-size: 16px;
   font-weight: 500;
+  margin: 4%;
 }
 .form-outer form .page .field{
   width: 330px;
@@ -94,18 +120,14 @@ body{
   display: flex;
   position: relative;
 }
-form .page .field .label{
-  position: absolute;
-  top: -30px;
-  font-weight: 500;
-}
-form .page .field input{
-  height: 100%;
-  width: 100%;
-  border: 1px solid lightgrey;
-  border-radius: 5px;
-  padding-left: 15px;
-  font-size: 18px;
+
+
+.form-outer i {
+  justify-content: center;
+    font-size: 20px;
+    padding: 0;
+    display: flex;
+    align-items: center;
 }
 form .page .field select{
   width: 100%;
