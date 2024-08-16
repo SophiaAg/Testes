@@ -51,10 +51,10 @@ body{
 }
 ::selection{
   color: #fff;
-  background: #d43f8d;
+  background: var(--cor-segundaria);
 }
 .container{
-  width: 60%;
+  width: 80%;
   background: #fff;
  
   border-radius: 5px;
@@ -117,14 +117,15 @@ form .page .field button{
   width: 100%;
   height: calc(100% + 5px);
   border: none;
-  background: #d33f8d;
+  background: var(--cor-segundaria);
   margin-top: -20px;
-  border-radius: 5px;
+  border-radius: 20px;
   color: #fff;
   cursor: pointer;
   font-size: 18px;
   font-weight: 500;
   letter-spacing: 1px;
+
   text-transform: uppercase;
   transition: 0.5s ease;
 }
@@ -172,8 +173,8 @@ form .page .btns button.next{
   line-height: 25px;
 }
 .progress-bar .step .bullet.active{
-  border-color: #d43f8d;
-  background: #d43f8d;
+  border-color: var(--cor-segundaria);
+  background: var(--cor-segundaria);
 }
 .progress-bar .step .bullet span{
   position: absolute;
@@ -191,7 +192,7 @@ form .page .btns button.next{
 }
 
 .progress-bar .step p.active{
-  color: #d43f8d;
+  color: var(--cor-segundaria);
   transition: 0.2s linear;
 }
 .progress-bar .step .check{
@@ -205,4 +206,46 @@ form .page .btns button.next{
 .progress-bar .step .check.active{
   display: block;
   color: #fff;
+}
+
+
+.input-field {
+  max-width: 380px;
+  width: 100%;
+  background-color: #f0f0f0;
+  margin: 10px 0;
+  height: 55px;
+  border-radius: 55px;
+  display: grid;
+  grid-template-columns: 15% 85%;
+  padding: 0 0.4rem;
+  position: relative;
+}
+
+.input-field input {
+  background: none;
+  outline: none;
+  border: none;
+  line-height: 1;
+  font-weight: 500;
+  font-size: 1rem;
+  color: #adadad;
+}
+
+.input-field input::placeholder {
+  color: #aaa;
+  font-weight: 500;
+}
+
+.form-outer .button-PROXIMO{
+  display: inline-block;
+  border: none;
+margin-top: 1rem;
+padding: .5rem 3rem;
+border-radius:20px;
+background:var(--cor-segundaria);
+font-size: 1rem;
+color: var(--branco);
+cursor: pointer;
+margin: 20px;
 }
