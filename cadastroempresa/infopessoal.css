@@ -32,74 +32,62 @@ body.color {
 
 }
 
-
-
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
-*{
-  margin: 0;
-  padding: 0;
-  outline: none;
-  font-family: 'Poppins', sans-serif;
-}
 body{
-  display: flex;
-  align-items: center;
+
+  width: 100%;
+  height: 100vh;
+ display: flex;
   justify-content: center;
-  min-height: 100vh;
-  overflow: hidden;
-  background-color: #ffe0d2;
- 
-}
-header{
-  background: var(--qs-branco);
-  display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 1.8rem 9%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 1000;
-  transform: translateY(-10rem, );
-  box-shadow: 0 .3rem 1.5rem rgb(82, 82, 82);
-}
-
-header .header-simples {
-  font-size: 12px;
-  color: var(--preto);
-}
-
-header .header-simples span{
-  color: var(--cor-segundaria);
+  background: #e7e7f8;
+  transition: all 0.5s
 }
 
 
-::selection{
-  color: #fff;
-  background: var(--cor-segundaria);
-}
 .container{
   width: 80%;
+  height: 80vh;
+  display: flex;
   background: var(--branco);
   border-radius: 20px;
-  padding: 50px 35px 10px 35px;
-}
-.container header{
-  font-size: 35px;
-  font-weight: 600;
+
+ 
+  
 }
 
-.container p{
+.form-img{
+  width: 50%;
+  display:flex ;
+  justify-content: center;
+  align-items: center;
+  background-color: #5BB9F0;
+  padding: 1rem;
+}
+
+.form-img img{
+  width: 31rem;
+}
+
+.form-total{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 3rem;
+  overflow: auto;
+}
+.form-total p{
     font-size: 16px;
     font-weight: 400;
 }
 
-.container .form-outer{
+.form-total .form-outer{
   width: 100%;
   overflow: hidden;
 }
-.container .form-outer form{
+.form-total .form-outer form{
   display: flex;
   width: 400%;
 }
@@ -166,17 +154,18 @@ form .page .btns button.next{
 }
 
 
-.container .progress-bar{
+.form-total .progress-bar{
   display: flex;
   margin: 40px 0;
   user-select: none;
+  width: 50%;
 }
-.container .progress-bar .step{
+.form-total .progress-bar .step{
   text-align: center;
   width: 100%;
   position: relative;
 }
-.container .progress-bar .step p{
+.form-total .progress-bar .step p{
   font-weight: 500;
   font-size: 18px;
   color: #000;
