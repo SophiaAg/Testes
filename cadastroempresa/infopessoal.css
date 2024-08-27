@@ -40,36 +40,31 @@ body{
   justify-content: center;
   align-items: center;
   background: #e7e7f8;
-  transition: all 0.5s
+  transition: all 0.5s;
+  background-image: url('download\ \(1\).jpeg');
+  background-size: cover; /* A imagem cobre todo o fundo */
+
 }
+
 
 
 .container{
-  width: 80%;
-  height: 80vh;
-  display: flex;
-  background: var(--branco);
-  border-radius: 20px;
+  
+    position: relative;
+    width: 80%;
+    max-width: 1020px;
+    height: 640px;
+    background-color: #fff;
+    border-radius: 3.3rem;
+    box-shadow: 0 60px 40px -30px rgba(0, 0, 0, 0.27);
+  }
 
  
   
-}
 
-.form-img{
-  width: 50%;
-  display:flex ;
-  justify-content: center;
-  align-items: center;
-  background-color: #5BB9F0;
-  padding: 1rem;
-}
 
-.form-img img{
-  width: 31rem;
-}
-
-.form-total{
-  width: 50%;
+.box {
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -78,16 +73,17 @@ body{
   padding: 3rem;
   overflow: auto;
 }
-.form-total p{
+
+.box  p{
     font-size: 16px;
     font-weight: 400;
 }
 
-.form-total .form-outer{
+.box  .form-outer{
   width: 100%;
   overflow: hidden;
 }
-.form-total .form-outer form{
+.box  .form-outer form{
   display: flex;
   width: 400%;
 }
@@ -154,18 +150,18 @@ form .page .btns button.next{
 }
 
 
-.form-total .progress-bar{
+.box  .progress-bar{
   display: flex;
   margin: 40px 0;
   user-select: none;
   width: 50%;
 }
-.form-total .progress-bar .step{
+.box  .progress-bar .step{
   text-align: center;
   width: 100%;
   position: relative;
 }
-.form-total .progress-bar .step p{
+.box  .progress-bar .step p{
   font-weight: 500;
   font-size: 18px;
   color: #000;
