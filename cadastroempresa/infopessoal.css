@@ -47,31 +47,18 @@ body{
 }
 
 
-
-.container{
-  
-    position: relative;
-    width: 80%;
-    max-width: 1020px;
-    height: 640px;
-    background-color: #fff;
-    border-radius: 3.3rem;
-    box-shadow: 0 60px 40px -30px rgba(0, 0, 0, 0.27);
-  }
-
- 
-  
-
-
 .box {
-  width: 100%;
+  width: 85%;
+  height: 700px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: #fff;
   padding: 3rem;
-  overflow: auto;
+  position: relative;
+  background-color: #fff;
+  border-radius: 10%;
+  box-shadow: 0 60px 40px -30px rgba(0, 0, 0, 0.27);
 }
 
 .box  p{
