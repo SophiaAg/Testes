@@ -67,29 +67,22 @@
                <div class="page slide-page">
 
                   <div class="title-info">
-                     <h1>Endereço da Loja</h1>
-                  <p>Preencha as informações de endereço da sua loja.</p>
+                     <h1>Informação do responsável</h1>
+                  <p>Preencha as informações suas informações</p>
                </div>
 
 
-                  <section class=" input-field <%= avisoErro.nome %>">
+                  <section class=" input-field <%= avisoErro.cep %>">
     
                      <i class="fas fa-user"></i>
                      <input id="nome" name="nome"  required type="text" placeholder="Nome completo"/>
                
                    </section>
-
-                   <section class="input-field <%= avisoErro.email %>">
-    
-                     <i class="fas fa-envelope"></i>
-                     <input name="email" id="email"  required type="email" placeholder="Email" />
-               
-                   </section>
  
-                   <section class="input-field <%= avisoErro.celular %>">
+                   <section class="input-field <%= avisoErro.cpf %>">
  
                      <i class="fas fa-user"></i>
-                     <input id="celular" name="celular"  required type="text" placeholder="Celular" />
+                     <input id="cpf" name="cpf"  required type="text" placeholder="Cpf" />
                
                    </section>
 
@@ -105,30 +98,24 @@
 
                <div class="page">
                   <div class="title-info">
-                     <h1>Endereço da Loja</h1>
-                  <p>Preencha as informações de endereço da sua loja.</p>
+                     <h1>Informações da Empresa</h1>
+                  <p>Preencha as informações da Empresa</p>
                </div>
 
 
                   <section class=" input-field <%= avisoErro.nome %>">
-    
                      <i class="fas fa-user"></i>
-                     <input id="nome" name="nome"  required type="text" placeholder="Nome completo"/>
-               
+                     <input id="cnpj" name="cnpj"  required type="text" placeholder="CNPJ"/>
                    </section>
 
                    <section class="input-field <%= avisoErro.email %>">
-    
                      <i class="fas fa-envelope"></i>
                      <input name="email" id="email"  required type="email" placeholder="Email" />
-               
                    </section>
  
                    <section class="input-field <%= avisoErro.celular %>">
- 
                      <i class="fas fa-user"></i>
                      <input id="celular" name="celular"  required type="text" placeholder="Celular" />
-               
                    </section>
 
                   <div class="field btns">
@@ -140,30 +127,24 @@
 
                <div class="page">
                   <div class="title-info">
-                     <h1>Endereço da Loja</h1>
-                  <p>Preencha as informações de endereço da sua loja.</p>
+                     <h1>Informações da empresa</h1>
+                  <p>Preencha com as informações da empresa </p>
                </div>
 
 
                   <section class=" input-field <%= avisoErro.nome %>">
-    
                      <i class="fas fa-user"></i>
-                     <input id="nome" name="nome"  required type="text" placeholder="Nome completo"/>
-               
+                     <input id="razãosocial" name="razãosocial"  required type="text" placeholder="Razão social"/>
                    </section>
 
                    <section class="input-field <%= avisoErro.email %>">
-    
                      <i class="fas fa-envelope"></i>
-                     <input name="email" id="email"  required type="email" placeholder="Email" />
-               
+                     <input name="especialidade" id="especialidade"  required type="Especialidade" placeholder="Email" />
                    </section>
  
                    <section class="input-field <%= avisoErro.celular %>">
- 
                      <i class="fas fa-user"></i>
-                     <input id="celular" name="celular"  required type="text" placeholder="Celular" />
-               
+                     <input id="nome" name="nome"  required type="text" placeholder="Nome que aparecerá na pagina" />
                    </section>
 
                   <div class="field btns">
@@ -180,26 +161,26 @@
                </div>
 
 
-                  <section class=" input-field <%= avisoErro.nome %>">
-    
+                  <section class=" input-field <%= avisoErro.cep %>">
                      <i class="fas fa-user"></i>
-                     <input id="nome" name="nome"  required type="text" placeholder="Nome completo"/>
-               
+                     <input id="cep" name="cep"  required type="text" placeholder="CEP"/>
                    </section>
 
                    <section class="input-field <%= avisoErro.email %>">
-    
                      <i class="fas fa-envelope"></i>
-                     <input name="email" id="email"  required type="email" placeholder="Email" />
-               
+                     <input name="estado" id="estado"  required type="estado" placeholder="Email" />
                    </section>
  
-                   <section class="input-field <%= avisoErro.celular %>">
- 
+                   <section class="input-field <%= avisoErro.cidade %>">
                      <i class="fas fa-user"></i>
-                     <input id="celular" name="celular"  required type="text" placeholder="Celular" />
-               
+                     <input id="cidade" name="cidade"  required type="text" placeholder="Cidade" />
                    </section>
+
+                   <section class="input-field <%= avisoErro.bairro %>">
+                     <i class="fas fa-user"></i>
+                     <input id="bairro" name="bairro"  required type="text" placeholder="Bairro" />
+                   </section>
+
                   <div class="field btns">
                      <button class="prev-3 prev">Previous</button>
                      <button class="submit">Submit</button>
