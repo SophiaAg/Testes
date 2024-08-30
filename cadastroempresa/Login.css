@@ -1,291 +1,239 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
 
 * {
-    font-family: "Poppins", sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    list-style: none;
-    text-decoration: none;
-    scroll-padding-top: 2rem;
-    scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-
-/*cores*/
-:root {
-    --cor-primaria: #000080;
-    --cor-segundaria: #FF8100;
-    --qs-branco: #eeeeeeda;
-    --branco: #fff;
-    --preto: #000;
-    --textos: #333;
+body {
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom right, #ff966d, #fa538d, #89379c);
 }
 
-body.color {
-    --cor-primaria: #5BB9F0;
-    --cor-segundaria: #FFE027;
-    --qs-branco: #2b2b2bda;
-    --branco: #252525;
-    --preto: #fff;
-    --textos: #bebebe;
-
-}
-
-main {
-  width: 100%;
-  min-height: 100vh;
-  overflow: hidden;  
-  padding: 2rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-image: url('download\ \(1\).jpeg');
-    background-size: cover; /* A imagem cobre todo o fundo */
- 
-}
-
-.box {
-  position: relative;
-  width: 100%;
-  max-width: 1020px;
-  height: 640px;
-  background-color: #fff;
-  border-radius: 3.3rem;
-  box-shadow: 0 60px 40px -30px rgba(0, 0, 0, 0.27);
-}
-
-.inner-box {
-  position: absolute;
-  width: calc(100% - 4.1rem);
-  height: calc(100% - 4.1rem);
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.inner-box .form-container{
-    padding: 15px;
-    border-radius: 20px;
-    color: var(--textos);
-    width: 45%
-}
-
-.inner-box .form-container h1{
-    font-size: 2em;
-    text-align: center;
-}
-.inner-box .form-container p{
-    padding: 10px;
-}
-
-.input-field {
-    max-width: 380px;
-    width: 100%;
-    background-color: #f0f0f0;
-    margin: 10px 0;
-    height: 55px;
-    border-radius: 55px;
+.container {
+    width: 95%;
+    height: 70%;
     display: grid;
-    grid-template-columns: 15% 85%;
-    padding: 0 0.4rem;
-    position: relative;
-  }
-
-  .input-field input {
-    background: none;
-    outline: none;
-    border: none;
-    line-height: 1;
-    font-weight: 500;
-    font-size: 1rem;
-    color: #adadad;
-  }
-
-  .input-field input::placeholder {
-    color: #aaa;
-    font-weight: 500;
-  }
-
-  .inner-box .form-container .button-CADASTRAR{
-    display: inline-block;
-    border: none;
-  margin-top: 1rem;
-  padding: .5rem 3rem;
-  border-radius:20px;
-  background:var(--cor-segundaria);
-  font-size: 1rem;
-  color: var(--branco);
-  cursor: pointer;
- margin: 20px;
+    grid-template-columns: 100%;
+    grid-template-areas: "login";
+    box-shadow: 0 0 17px 10px rgb(0 0 0 / 30%);
+    border-radius: 20px;
+    background: white;
+    overflow: hidden;
 }
 
-.form-outer form .page{
+.design {
+    grid-area: design;
+    display: none;
+    position: relative;
+}
+
+.rotate-45 {
+    transform: rotate(-45deg);
+}
+
+.design .pill-1 {
+    bottom: 0;
+    left: -40px;
+    position: absolute;
+    width: 80px;
+    height: 200px;
+    background: linear-gradient(#ff966d, #fa538d, #89379c);
+    border-radius: 40px;
+}
+
+.design .pill-2 {
+    top: -100px;
+    left: -80px;
+    position: absolute;
+    height: 450px;
+    width: 220px;
+    background: linear-gradient(#ff966d, #fa538d, #89379c);
+    border-radius: 200px;
+    border: 30px solid #e2c5e2;
+}
+
+.design .pill-3 {
+    top: -100px;
+    left: 160px;
+    position: absolute;
+    height: 200px;
+    width: 100px;
+    background: linear-gradient(#ff966d, #fa538d, #89379c);
+    border-radius: 70px;
+}
+
+.design .pill-4 {
+    bottom: -180px;
+    left: 220px;
+    position: absolute;
+    height: 300px;
+    width: 120px;
+    background: linear-gradient(#ff966d, #fa538d);
+    border-radius: 70px;
+}
+.form-cadastro{
+  width: 100%;
+}
+.login {
+    grid-area: login;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background: white;
+}
+
+.login p{
+  font-size: 12px;
+}
+
+.login h3.title {
+    margin: 5px 0;
+}
+
+.text-input {
+    background: #e6e6e6;
+    height: 40px;
+    display: flex;
+    width: 60%;
+    align-items: center;
+    border-radius: 10px;
+    padding: 0 15px;
+    margin: 5px 0;
+}
+
+.text-input input {
+    background: none;
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 100%;
+    margin-left: 10px;
+}
+
+.text-input i {
+    color: #686868;
+}
+
+::placeholder {
+    color: #9a9a9a;
+}
+.container  .login{
+  width: 100%;
+  overflow: hidden;
+}
+.container .login form{
+  display: flex;
+  width: 400%;
+}
+.login .page-form {
   width: 25%;
   transition: margin-left 0.3s ease-in-out;
-}
-.form-outer form .page .title-info{
-  text-align: left;
-  font-size: 16px;
-  font-weight: 500;
-  margin: 4%;
-}
-.form-outer form .page .field{
-  width: 330px;
-  height: 45px;
-  margin: 45px 0;
-  display: flex;
-  position: relative;
-}
+} 
 
-
-.form-outer i {
-  justify-content: center;
-    font-size: 20px;
-    padding: 0;
-    display: flex;
-    align-items: center;
-}
-form .page .field select{
+.field button{
   width: 100%;
-  padding-left: 10px;
-  font-size: 17px;
-  font-weight: 500;
-}
-form .page .field button{
-  width: 100%;
-  height: calc(100% + 5px);
+  height: calc(100% + 1px);
   border: none;
-  background: var(--cor-segundaria);
+  background: #89379c;
   margin-top: -20px;
   border-radius: 20px;
   color: #fff;
   cursor: pointer;
-  font-size: 18px;
-  font-weight: 500;
+  font-size: 14px;
+  font-weight: 400;
   letter-spacing: 1px;
-
+  padding: 10px;
+  margin: 10%;
   text-transform: uppercase;
   transition: 0.5s ease;
 }
-form .page .field button:hover{
+ .field button:hover{
   background: #000;
 }
-form .page .btns button{
+ .btns button{
   margin-top: -20px!important;
 }
-form .page .btns button.prev{
+ .btns button.prev{
   margin-right: 3px;
   font-size: 17px;
 }
-form .page .btns button.next{
+ .btns button.next{
   margin-left: 3px;
 }
 
 
+a {
+    font-size: 12px;
+    color: #9a9a9a;
+    cursor: pointer;
+    user-select: none;
+    text-decoration: none;
+}
 
+a.forgot {
+    margin-top: 15px;
+}
 
-
-
-@media (max-width: 850px) {
-  .box {
-    height: auto;
-    max-width: 550px;
-    overflow: hidden;
-  }
-
-  .inner-box {
-    position: static;
-    transform: none;
-    width: revert;
-    height: revert;
-    padding: 2rem;
-  }
-
-  .inner-box .form-container{
-    position: revert;
-    width: 100%;
-    height: auto;
-  }
-
- form{
-    max-width: revert;
-    padding: 1.5rem 2.5rem 2rem;
-    transition: transform 0.8s ease-in-out, opacity 0.45s linear;
-  }
-
-  .form-container h1 {
-    margin: 1rem;
-   
-  }
-
-
-  .carousel {
-    position: revert;
-    height: auto;
-    width: 100%;
-    padding: 3rem 2rem;
+.create {
     display: flex;
-  }
-
-  .images-wrapper {
-    display: none;
-  }
-
-  .text-slider {
-    width: 100%;
-  }
+    align-items: center;
+    position: absolute;
+    bottom: 30px;
 }
 
-@media (max-width: 530px) {
-  main {
-    padding: 1rem;
-  }
-
-  .box {
-    border-radius: 2rem;
-  }
-
-  .inner-box {
-    padding: 1rem;
-  }
-
-  .carousel {
-    padding: 1.5rem 1rem;
-    border-radius: 20px;
-  }
-
-  .text-wrap {
-    margin-bottom: 1rem;
-  }
-
-  .text-group h2 {
-    font-size: 1.2rem;
-  }
-
-  form {
-    padding: 1rem 2rem 1.5rem;
-  }
+.create i {
+    color: #9a9a9a;
+    margin-left: 10px;
 }
 
+@media (min-width: 768px) {
+    .container {
+        grid-template-columns: 50% 50%;
+        grid-template-areas: "design login";
+    }
 
- .progress-bar{
+    .design {
+        display: block;
+    }
+
+     
+    
+}
+ @media (max-width: 500px) {
+  .progress-bar .step p {display: none; gap: 10%;}
+ }
+
+
+.progress-bar{
   display: flex;
   margin: 20px 0;
   user-select: none;
-  width: 50%;
-} 
+  gap: 10%;
+  align-items: center;
+  justify-items: center;
+
+}
 .progress-bar .step{
   text-align: center;
   width: 100%;
   position: relative;
-} 
+}
 .progress-bar .step p{
   font-weight: 500;
-  font-size: 18px;
+  font-size: 16px;
   color: #000;
   margin-bottom: 8px;
+  gap: 5%;
 }
+
 .progress-bar .step .bullet{
   height: 25px;
   width: 25px;
