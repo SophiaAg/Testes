@@ -49,7 +49,7 @@ body{
 
 .box {
   width: 85%;
-  height: 70%;
+  height: 90%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -139,7 +139,7 @@ form .page .btns button.next{
 
 .box  .progress-bar{
   display: flex;
-  margin: 40px 0;
+  margin: 20px 0;
   user-select: none;
   width: 50%;
 }
