@@ -33,23 +33,25 @@ body.color {
 }
 
 body{
-
- 
   height: 100vh;
  display: flex;
   justify-content: center;
   align-items: center;
   background: #e7e7f8;
   transition: all 0.5s;
-  background-image: url('download\ \(1\).jpeg');
-  background-size: cover; /* A imagem cobre todo o fundo */
+    background: #e7e7f8;
+    background-image: url('download\ \(1\).jpeg');
+    background-size: cover; /* A imagem cobre todo o fundo */
+    background-position: center; /* Centraliza a imagem de fundo */
+  }
+  
 
-}
 
 
 .box {
-  width: 85%;
-  height: 90%;
+  width: 100%;
+  max-width: 500px; /* Limita a largura máxima da caixa */
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -242,4 +244,51 @@ font-size: 1rem;
 color: var(--branco);
 cursor: pointer;
 margin: 20px;
+}
+
+@media (max-width: 768px) {
+  .box {
+    padding: 1.5rem;
+    width: 90%;
+    max-width: 100%;
+  }
+
+  .progress-bar {
+    flex-direction: column;
+  }
+
+  .progress-bar .step {
+    margin-bottom: 10px;
+  }
+
+  .form-outer form {
+    flex-direction: column;
+  }
+
+  .form-outer form .page {
+    width: 100%;
+    margin-left: 0; /* Remover o deslocamento lateral */
+  }
+
+  .input-field {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .box {
+    padding: 1rem;
+  }
+
+  .progress-bar .step p {
+    font-size: 14px;
+  }
+
+  .form-outer form .page .field {
+    width: 100%;
+  }
+
+  form .page .field button {
+    font-size: 16px;
+  }
 }
