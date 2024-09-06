@@ -74,10 +74,11 @@ body{
 }
 .box  .form-outer form{
   display: flex;
-  width: 400%;
+  flex-flow: row nowrap;
 }
 .form-outer form .page{
-  width: 25%;
+  min-width: 100%;
+  width: 100%;
   transition: margin-left 0.3s ease-in-out;
 }
 .form-outer form .page .title-info{
@@ -144,6 +145,8 @@ form .page .btns button.next{
   margin: 20px 0;
   user-select: none;
   width: 50%;
+  gap: 5%;
+  justify-content: center;
 }
 .box  .progress-bar .step{
   text-align: center;
@@ -252,15 +255,17 @@ margin: 20px;
     width: 90%;
     max-width: 100%;
   }
-
-  .progress-bar {
-    flex-direction: column;
-  }
-
   .progress-bar .step {
     margin-bottom: 10px;
   }
 
+  .progress-bar .step p {
+   display: none;
+  }
+
+  .progress-bar .step .check{
+    top: 50%;
+  }
   .form-outer form {
     flex-direction: column;
   }
