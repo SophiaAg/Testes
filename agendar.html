@@ -1,0 +1,296 @@
+<style>
+    #areaLayout h2 {
+      font-size: 2em;
+      font-weight: bold;
+    }
+  
+    #areaLayout #topFit {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 1em;
+      margin-left: 3em;
+    }
+  
+    #areaLayout #iconsFit button {
+      border: 0;
+      background-color: transparent;
+      cursor: pointer;
+    }
+  
+    #areaLayout #iconsArea {
+      margin-right: 3em;
+    }
+  
+    #areaLayout #iconsFit {
+      display: flex;
+      gap: 15px;
+      justify-content: space-between;
+    }
+  
+  
+    /* area mid */
+    #sessionMid {
+      margin-top: 1em;
+    }
+  
+    #areaMid {
+      display: flex;
+      margin-left: 3em;
+    }
+  
+    #areaMid .bg-active,
+    .bg-color {
+      padding: 20px;
+      border-right: 1px solid grey;
+      cursor: pointer;
+    }
+  
+    #areaMid .bg-color {
+      background-color: #afb0b6;
+    }
+  
+    #areaMid .bg-active {
+      border: 1px solid grey;
+    }
+  
+    #sessionMid #contentMid {
+      margin-left: 3em;
+      border: 1px solid grey;
+      margin-right: 3em;
+      padding: 20px;
+    }
+  
+    #sessionMid #contentMid ul {
+      list-style-type: disc;
+      padding-left: 40px;
+    }
+  
+    #sessionMid #contentMid ul li {
+      list-style: disc !important;
+    }
+  
+    #sessionMid #contentFirst{
+      display: flex;
+    }
+  
+    /* area imagens */  
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -15px;  
+        margin-right: -15px;  
+        width: 100%;
+      }
+  
+       
+      .col {
+        flex: 0 0 25%;
+        max-width: 25%;
+        box-sizing: border-box;
+        padding: 15px;  
+      }
+  
+      .col div {
+        background-color: #f9f9f9;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve na parte inferior */
+        border-radius: 5px;
+        overflow: hidden; /* Para que o conteúdo da imagem siga o contorno arredondado */
+        transition: transform 0.3s ease;
+      }
+  
+      /* Efeito de hover */
+      .col div:hover {
+        transform: translateY(-5px); /* Sutil elevação ao passar o mouse */
+      }
+   
+      .product-info {
+        display: flex;
+        align-items: center;
+        padding: 20px;
+        gap: 20px;
+        justify-content: space-between;
+      }
+  
+      .product-info p {
+        margin: 0;
+      }
+  
+       
+      @media (max-width: 992px) {
+        .col {
+          flex: 0 0 50%; 
+          max-width: 50%;
+        }
+      }
+   
+      @media (max-width: 576px) {
+        .col {
+          flex: 0 0 100%;  
+          max-width: 100%;
+        }
+      }
+   
+      .fa-heart {
+        font-size: 20px;
+        color: #ff6b6b;
+      }
+  </style>
+  
+  
+  
+  <div id="areaLayout">
+    <!-- session top -->
+    <div id="topFit">
+      <h2>Total: $9,137</h2>
+      <div id="iconsArea">
+        <div id="iconsFit">
+          <button type="button"><i class="fa-solid fa-circle-chevron-left"></i></button>
+          <button type="button"><i class="fa-solid fa-circle-chevron-right"></i></button>
+          <button type="button"><i class="fa-regular fa-heart"></i></button>
+        </div>
+      </div>
+    </div>
+  
+    <!-- session mid -->
+    <div id="sessionMid">
+      <div id="areaMid">
+        <div class="bg-active" onclick="showContent('contentFirst', this)">
+          <h3>Informação Detalhada</h3>
+        </div>
+        <div class="bg-color" onclick="showContent('contentSecond', this)">
+          <h3>Dimensões</h3>
+        </div>
+        <div class="bg-color" onclick="showContent('contentThree', this)">
+          <h3>Configurações Popular</h3>
+        </div>
+      </div>
+      <div id="contentMid">
+        <div id="contentFirst">
+          <div>
+            <ul>
+              <li>1° Conteúdo</li>
+              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum distinctio delectus repellendus. Soluta
+                ullam, eius nam numquam a sed voluptatibus repellat assumenda distinctio doloribus magnam dolores!
+                Similique
+                ab libero ex?</li>
+            </ul>
+          </div>
+          <div>
+            <ul>
+              <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod tenetur molestiae laboriosam voluptas,
+                deleniti, perferendis in veniam totam mollitia, vel vero alias eaque voluptatem laborum reiciendis quis?
+                Obcaecati, ullam sequi!</li>
+              <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod tenetur molestiae laboriosam voluptas,
+                deleniti, perferendis in veniam totam mollitia, vel vero alias eaque voluptatem laborum reiciendis quis?
+                Obcaecati, ullam sequi!</li>
+            </ul>
+          </div>
+        </div>
+        <div id="contentSecond" style="display: none;">
+          <div>
+            <ul>
+              <li>2° Conteúdo</li>
+              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum distinctio delectus repellendus. Soluta
+                ullam, eius nam numquam a sed voluptatibus repellat assumenda distinctio doloribus magnam dolores!
+                Similique
+                ab libero ex?</li>
+            </ul>
+          </div>
+          <div>
+            <ul>
+              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos consectetur cupiditate facilis et. Praesentium enim nulla temporibus impedit maxime, ex velit animi illo molestiae necessitatibus ratione cum, quisquam voluptatibus quas?</li>
+              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos consectetur cupiditate facilis et. Praesentium enim nulla temporibus impedit maxime, ex velit animi illo molestiae necessitatibus ratione cum, quisquam voluptatibus quas?</li>
+            </ul>
+          </div>
+        </div>
+        <div id="contentThree" style="display: none;">
+          <div> 
+            <ul>
+              <li>3° Conteúdo</li>
+              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum distinctio delectus repellendus. Soluta
+                ullam, eius nam numquam a sed voluptatibus repellat assumenda distinctio doloribus magnam dolores! Similique
+                ab libero ex?</li>
+              </ul>
+            </div>
+            <div>
+              <ul>
+                <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam doloribus aliquid numquam tenetur reiciendis molestias, quia dicta aspernatur, consectetur voluptatibus nemo reprehenderit repellendus vel sit soluta ducimus officiis, nostrum autem.</li>
+                <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam doloribus aliquid numquam tenetur reiciendis molestias, quia dicta aspernatur, consectetur voluptatibus nemo reprehenderit repellendus vel sit soluta ducimus officiis, nostrum autem.</li>
+              </ul>
+            </div>
+        </div>
+      </div>
+    </div>
+  
+    <div>
+      <div class="row">
+        <!-- Coluna 1 -->
+        <div class="col">
+          <div>
+            <img src="src/img-homepage/chair.jpg" alt="Cadeira Ergonomica" width="100%">
+            <div class="product-info">
+              <div>
+                <p>Cadeira Ergonomica</p>
+                <p>De: R$ 400,00 Por R$ 250,00</p>
+              </div>
+              <div>
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <!-- Coluna 2 -->
+        <div class="col">
+          <div>
+            <img src="src/img-homepage/chair.jpg" alt="Cadeira Ergonomica" width="100%">
+            <div class="product-info">
+              <div>
+                <p>Cadeira Ergonomica</p>
+                <p>De: R$ 400,00 Por R$ 250,00</p>
+              </div>
+              <div>
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <!-- Coluna 3 -->
+        <div class="col">
+          <div>
+            <img src="src/img-homepage/chair.jpg" alt="Cadeira Ergonomica" width="100%">
+            <div class="product-info">
+              <div>
+                <p>Cadeira Ergonomica</p>
+                <p>De: R$ 400,00 Por R$ 250,00</p>
+              </div>
+              <div>
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <!-- Coluna 4 -->
+        <div class="col">
+          <div>
+            <img src="src/img-homepage/chair.jpg" alt="Cadeira Ergonomica" width="100%">
+            <div class="product-info">
+              <div>
+                <p>Cadeira Ergonomica</p>
+                <p>De: R$ 400,00 Por R$ 250,00</p>
+              </div>
+              <div>
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+    </div>
+  
+  </div>
+  
+  <script src="/js/calendario.js"></script>

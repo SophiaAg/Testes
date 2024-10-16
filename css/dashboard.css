@@ -32,7 +32,7 @@ body.color{
  
 }
 body{
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     font-family: poppins, sans-serif;
     font-size: 0.88rem;
@@ -144,14 +144,287 @@ aside .slidebar a:hover span {
 }
 
 .right .top {
-    display: flex;
-    justify-content: end;
-    gap: 2rem;
-    background: gray;
+    position: fixed;
+    top: 0;
+    left: 0;
+    align-items: center;
+    padding: 0 0.8rem;
+    height: 4.6rem;
+    width: 100%;
+    margin: 2%;
+    z-index: 2;
+   
 }
 
 .right .top button {
     display: none;
+}
+
+
+.right .user-profile{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 1rem;
+    background-color: var(--cor-primaria);
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.right .user-profile:hover{
+    box-shadow: none;
+}
+
+.right .user-profile img{
+    width: 11rem;
+    height: auto;
+    margin-bottom: 0.8rem;
+    border-radius: 50%;
+}
+
+.right .user-profile h2{
+    margin-bottom: 0.2rem;
+}
+
+.right .servico{
+    margin-top: 2rem;
+}
+
+.right .servico .header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.8rem;
+}
+
+.right .servico .header span{
+    padding: 10px;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    background-color: var(--color-white);
+    border-radius: 50%;
+}
+
+.right .servico .notification{
+    background-color: var(--color-white);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 0.7rem;
+    padding: 1.4rem var(--card-padding);
+    border-radius: var(--border-radius-2);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.right .servico .notification:hover{
+    box-shadow: none;
+}
+
+.right .servico .notification .content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    width: 100%;
+}
+
+.right .servico .notification .icon{
+    padding: 0.6rem;
+    color: var(--color-white);
+    background-color: var(--color-success);
+    border-radius: 20%;
+    display: flex;
+}
+
+.right .servico .notification.deactive .icon{
+    background-color: var(--color-danger);
+}
+
+.right .servico .add-reminder{
+    background-color: var(--color-white);
+    border: 2px dashed var(--color-primary);
+    color: var(--color-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.right .servico .add-reminder:hover{
+    background-color: var(--color-primary);
+    color: white;
+}
+
+.right .servico .add-reminder div{
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.about-section {
+    padding-block: 4rem;
+    margin: 5%;
+    text-align: center;
+    background: var(--cor-primaria);
+    border-radius: 1.5rem;
+    border: 2px solid var(--branco);
+    color: var(--branco);
+    height: fit-content;
+  }
+  
+  .about-section .header-section {
+    font-weight: 700;
+    font-size: 40px;
+    color: var(--branco);
+  }
+  
+  .about-section .header-section span {
+    color: var(--cor-segundaria);
+  }
+  
+  .description-section {
+    max-width: 600px;
+    margin-inline: auto;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    color: var(--branco);
+  }
+  
+  .btn-about {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: .8rem 3rem;
+    border-radius: 5rem;
+    background: var(--cor-segundaria);
+    font-size: 1.3rem;
+    color: var(--branco);
+    cursor: pointer;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    transition: all .3s linear;
+  }
+  
+  .right-section{
+    margin-top: 10rem;
+}
+
+  .right-section .user-profile{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 1rem;
+    background-color: #bebebe;
+    padding: 80px;
+    border-radius: 30px;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.right-section .user-profile:hover{
+    box-shadow: none;
+}
+
+.right-section .user-profile img{
+    width: 11rem;
+    height: auto;
+    margin-bottom: 0.8rem;
+    border-radius: 50%;
+}
+
+.right-section .user-profile h2{
+    margin-bottom: 0.2rem;
+}
+
+.right-section .reminders{
+    margin-top: 2rem;
+}
+
+.right-section .reminders .header{
+   
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.8rem;
+}
+.right-section .reminders .header p{
+   
+}
+
+.right-section .reminders .header span{
+    padding: 10px;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    background-color: #df3737;
+    border-radius: 50%;
+}
+
+.right-section .reminders .notification{
+    background-color: var(--color-white);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 0.7rem;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.right-section .reminders .notification:hover{
+    box-shadow: none;
+}
+
+.right-section .reminders .notification .content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    width: 100%;
+}
+
+.right-section .reminders .notification .icon{
+    padding: 0.6rem;
+    color: var(--color-white);
+    background-color: var(--color-success);
+    border-radius: 20%;
+    display: flex;
+}
+
+.right-section .reminders .notification.deactive .icon{
+    background-color: var(--color-danger);
+}
+
+.right-section .reminders .add-reminder{
+    background-color: var(--color-white);
+    border: 2px dashed var(--color-primary);
+    color: var(--color-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.right-section .reminders .add-reminder:hover{
+    background-color: var(--color-primary);
+    color: white;
+}
+
+.right-section .reminders .add-reminder div{
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+#menu-btn{
+    border: none
+}
+
+#darkmode{
+    font-size: 30px;
+    margin-left: 90%;
 }
 @media screen and (max-width: 1200px){
 
@@ -170,11 +443,28 @@ aside .slidebar a:hover span {
         position: relative;
         margin-top: 1.8rem;
     }
+
+    .right .top button {
+        display: inline-block;
+        background: transparent;
+        cursor: pointer;
+        color: var(--preto);
+        position: absolute;
+        left: 1rem;
+    }
+    .right .top button span {
+        font-size: 2rem;
+    }
+
+
     
   
 }
 
 @media screen and (max-width: 768px){
+    .container{
+        display: block;
+    }
 
     aside{
         position: fixed;

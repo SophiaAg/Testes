@@ -1,0 +1,75 @@
+
+    #tableHistorico {
+      border: 1px solid #000;
+    }
+  
+    #tableHistorico th {
+      padding: 10px;
+      text-align: center;
+    }
+  
+    #tableHistorico td {
+      padding: 10px;
+      text-align: center;
+    }
+  
+    .statusConfirmado {
+      background-color: #00FF00;
+      padding: 5px;
+      border-radius: 5px;
+      color: black;
+    }
+  
+    .statusCancelado {
+      background-color: #FF0000;
+      padding: 5px;
+      border-radius: 5px;
+      color: white;
+    }
+  
+    .statusAlerta {
+      background-color: #FFA500;
+      padding: 5px;
+      border-radius: 5px;
+      color: white;
+    }
+  
+    #areaHistoricoAgendamentos a {
+      text-decoration: none;
+      color: black;
+    }
+  
+    .container {
+      padding-right: 15px;
+      padding-left: 15px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+  
+    #tituloHistorico{
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+  
+    #areaTable, #areaData{
+      margin-bottom: 20px;
+    }
+  
+    @media (min-width: 768px) {
+      .container {
+        width: 750px;
+      }
+    }
+  
+    @media (min-width: 992px) {
+      .container {
+        width: 970px;
+      }
+    }
+  
+    @media (min-width: 1200px) {
+      .container {
+        width: 1170px;
+      }
+    }
+  
