@@ -1,5 +1,10 @@
  .upcoming{
-    width: 25%;
+    width: 100%;
+    margin: 10%;
+}
+
+.upcoming .upcoming-box{
+    margin: 5%;
 }
 
  .upcoming .dates{
@@ -47,6 +52,24 @@
     background: #eff6ff;
     padding: 10px;
     border-radius: 10px;
+}
+.upcoming .events .item-adicionar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #eff6ff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow:  0 .5rem 1rem rgba(0, 0, 0, .1);
+}
+
+.upcoming .events .item-adicionar:hover{
+    background: var(--cor-segundaria);
+}
+.upcoming .events .item-adicionar .event-info a{
+    font-size: 14px;
+    color: #000;
+    font-weight: 800;
 }
 
  .upcoming .events .item > i{
