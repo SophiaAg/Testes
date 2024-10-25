@@ -1,0 +1,152 @@
+<style>
+    #tableHistorico {
+      border: 1px solid #000;
+    }
+  
+    #tableHistorico th {
+      padding: 10px;
+      text-align: center;
+    }
+  
+    #tableHistorico td {
+      padding: 10px;
+      text-align: center;
+    }
+  
+    .statusConfirmado {
+      background-color: #00FF00;
+      padding: 5px;
+      border-radius: 5px;
+      color: black;
+    }
+  
+    .statusCancelado {
+      background-color: #FF0000;
+      padding: 5px;
+      border-radius: 5px;
+      color: white;
+    }
+  
+    .statusAlerta {
+      background-color: #FFA500;
+      padding: 5px;
+      border-radius: 5px;
+      color: white;
+    }
+  
+    #areaHistoricoAgendamentos a {
+      text-decoration: none;
+      color: black;
+    }
+  
+    .container {
+      padding-right: 15px;
+      padding-left: 15px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+  
+    #tituloHistorico{
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+  
+    #areaTable, #areaData{
+      margin-bottom: 20px;
+    }
+  
+    @media (min-width: 768px) {
+      .container {
+        width: 750px;
+      }
+    }
+  
+    @media (min-width: 992px) {
+      .container {
+        width: 970px;
+      }
+    }
+  
+    @media (min-width: 1200px) {
+      .container {
+        width: 1170px;
+      }
+    }
+  
+  </style>
+  
+  <div id="areaHistoricoAgendamentos" class="container">
+  
+    <h1 id="tituloHistorico">Histórico</h1>
+  
+    <div id="areaData">
+      <input type="date" min="2024-01-01" id="filtrarData"> 
+    </div>
+  
+    <div id="areaTable">
+      <table id="tableHistorico">
+        <thead>
+          <tr>
+            <th>Nome</th>
+            <th>Número do Pedido</th>
+            <th>Serviço</th>
+            <th>Data</th>
+            <th>Status</th>
+            <th>Profissional</th>
+            <th>Ação</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Nome</td>
+            <td>123456</td>
+            <td>Serviço</td>
+            <td>18/07/2024</td>
+            <td>
+              <div class="statusConfirmado">
+                Confirmado
+              </div>
+            </td>
+            <td>Gustavo Caruso</td>
+            <td>
+              <a href="#"><i class="fa-solid fa-eye"></i></a>
+              <a href="#"><i class="fa-solid fa-trash"></i></a>
+            </td>
+          </tr>
+          <tr>
+            <td>Nome</td>
+            <td>123456</td>
+            <td>Serviço</td>
+            <td>18/09/2024</td>
+            <td>
+              <div class="statusCancelado">
+                Cancelado
+              </div>
+            </td>
+            <td>Vitor Pessoa</td>
+            <td><a href="#"><i class="fa-solid fa-eye"></i></a>
+              <a href="#"><i class="fa-solid fa-trash"></i></a>
+            </td>
+          </tr>
+          <tr>
+            <td>Nome</td>
+            <td>123456</td>
+            <td>Serviço</td>
+            <td>18/08/2024</td>
+            <td>
+              <div class="statusAlerta">
+                Aguardando
+              </div>
+            </td>
+            <td>Leticia Albano</td>
+            <td><a href="#"><i class="fa-solid fa-eye"></i></a>
+              <a href="#"><i class="fa-solid fa-trash"></i></a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  
+  <script src="/js/historico.js"></script>
+   
