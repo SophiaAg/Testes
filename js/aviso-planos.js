@@ -1,10 +1,11 @@
 // Seleciona os elementos do modal e os botões
 const modal = document.getElementById("modal");
+const openModalButton = document.getElementById("openModal");
 const closeModalButton = document.getElementById("closeModal");
 const redirectButton = document.getElementById("redirectButton");
 
-// Função para exibir o modal automaticamente quando a página carregar
-window.onload = function() {
+// Função para abrir o modal
+openModalButton.onclick = function() {
     modal.style.display = "block";
 }
 
