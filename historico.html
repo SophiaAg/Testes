@@ -1,0 +1,77 @@
+<link rel="stylesheet" href="historico.css">
+  
+  <div id="areaHistoricoAgendamentos" class="container">
+  
+    <h1 id="tituloHistorico">Histórico</h1>
+  
+    <div id="areaData">
+      <input type="date" min="2024-01-01" id="filtrarData"> 
+    </div>
+  
+    <div id="areaTable">
+      <table id="tableHistorico">
+        <thead>
+          <tr>
+            <th>Nome</th>
+            <th>Número do Pedido</th>
+            <th>Serviço</th>
+            <th>Data</th>
+            <th>Status</th>
+            <th>Profissional</th>
+            <th>Ação</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Nome</td>
+            <td>123456</td>
+            <td>Serviço</td>
+            <td>18/07/2024</td>
+            <td>
+              <div class="statusConfirmado">
+                Confirmado
+              </div>
+            </td>
+            <td>Gustavo Caruso</td>
+            <td>
+              <a href="#"><i class="fa-solid fa-eye"></i></a>
+              <a href="#"><i class="fa-solid fa-trash"></i></a>
+            </td>
+          </tr>
+          <tr>
+            <td>Nome</td>
+            <td>123456</td>
+            <td>Serviço</td>
+            <td>18/09/2024</td>
+            <td>
+              <div class="statusCancelado">
+                Cancelado
+              </div>
+            </td>
+            <td>Vitor Pessoa</td>
+            <td><a href="#"><i class="fa-solid fa-eye"></i></a>
+              <a href="#"><i class="fa-solid fa-trash"></i></a>
+            </td>
+          </tr>
+          <tr>
+            <td>Nome</td>
+            <td>123456</td>
+            <td>Serviço</td>
+            <td>18/08/2024</td>
+            <td>
+              <div class="statusAlerta">
+                Aguardando
+              </div>
+            </td>
+            <td>Leticia Albano</td>
+            <td><a href="#"><i class="fa-solid fa-eye"></i></a>
+              <a href="#"><i class="fa-solid fa-trash"></i></a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  
+  <script src="/js/historico.js"></script>
+   
